@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="static/stylesheet/form.css">
+    <title>TELECOME CHURN PREDICITION SERVICE</title>
+</head>
+<body>
+    <div class="container ">
+        <header class="header">
+            <h1 id="title">
+                TELECOME CHURN PREDICITION 
+            </h1>
+        </header>
+      <form  id="survey-form" method="post" >
+
+        <!-- State section -->
+        <div class="form-group">
+        <p>State</p>
+        <select name="state" required id="state" class="formControl">
+            <option value disabled selected >Select State</option>
+            <option value="0">KS</option>
+            <option value="1">OH</option>
+            <option value="2">NJ</option>
+            <option value="3">OK</option>
+            <option value="4">AL</option>
+            <option value="5">MA</option>
+            <option value="6">MO</option>
+            <option value="7">LA</option>
+            <option value="8">WV</option>
+            <option value="9">IN</option>
+            <option value="10">RI</option>
+            <option value="11">IA</option>
+            <option value="12">MT</option>
+            <option value="13">NY</option>
+            <option value="14">ID</option>
+            <option value="15">VT</option>
+            <option value="16">VA</option>
+            <option value="17">TX</option>
+            <option value="18">FL</option>
+            <option value="19">CO</option>
+            <option value="20">AZ</option>
+            <option value="21">SC</option>
+            <option value="22">NE</option>
+            <option value="23">WY</option>
+            <option value="24">HI</option>
+            <option value="25">IL</option>
+            <option value="26">NH</option>
+            <option value="27">GA</option>
+            <option value="28">AK</option>
+            <option value="29">MD</option>
+            <option value="30">AR</option>
+            <option value="31">WI</option>
+            <option value="32">OR</option>
+            <option value="33">MI</option>
+            <option value="34">DE</option>
+            <option value="35">UT</option>
+            <option value="36">CA</option>
+            <option value="37">MN</option>
+            <option value="38">SD</option>
+            <option value="39">NC</option>
+            <option value="40">WA</option>
+            <option value="41">NM</option>
+            <option value="42">NV</option>
+            <option value="43">DC</option>
+            <option value="44">KY</option>
+            <option value="45">ME</option>
+            <option value="46">MS</option>
+            <option value="47">TN</option>
+            <option value="48">PA</option>
+            <option value="49">CT</option>
+            <option value="50">ND</option>
+        </select>
+        </div>
+        <!-- end of select section -->
+
+            <!-- Account Length section -->
+            <div class="form-group">
+                <label for="account_length">Account Length</label>
+                <input type="number" name="account_length" id="account_length" class="formControl" placeholder="Enter Account Length" required>
+            </div>
+            <!-- end -->
+
+            <!-- Area Code section -->
+            <div class="form-group">
+                <label for="area_code">Area Code</label>
+                <input type="number" name="area_code" id="area_code" class="formControl" placeholder="Enter Area Code" required>
+            </div>
+            <!-- end -->
+
+            <!-- Internatinal Plan  section -->
+            <div class="form-group">
+                <p>Internatinal Plan</p>
+                <select name="inter_plan" required id="inter_plan" class="formControl">
+                    <option value disabled selected >Select the value</option>
+                    <option value="1">Yes</option>
+                    <option value="0">No</option>
+                </select>
+            </div>
+            <!-- end -->
+
+            <!-- Internatinal Plan  section -->
+            <div class="form-group">
+                <p>Voice mail Plan</p>
+                <select name="vm_plan" required id="vm_plan" class="formControl">
+                    <option value disabled selected >Select the value</option>
+                    <option value="1">Yes</option>
+                    <option value="0">No</option>
+                </select>
+            </div>
+            <!-- end -->
+
+            <!-- Number vmail messages section -->
+            <div class="form-group">
+                <label for="no_vmail_msg">Number of Vmail messages</label>
+                <input type="number" name="no_vmail_msg" id="no_vmail_msg" class="formControl" placeholder="Enter Number of Vmail messages" required>
+            </div>
+            <!-- end -->
+
+            <!-- total day minutes section -->
+            <div class="form-group">
+                <label for="tot_day_min">Total day minutes</label>
+                <input type="number" step="0.01" name="tot_day_min" id="tot_day_min" class="formControl" placeholder="Enter total day minutes" required>
+            </div>
+            <!-- end -->
+
+            <!-- total day calls section -->
+            <div class="form-group">
+                <label for="tot_day_calls">Total day calls</label>
+                <input type="number" name="tot_day_calls" id="tot_day_calls" class="formControl" placeholder="Enter Total day calls" required>
+            </div>
+            <!-- end -->
+
+            <!-- total day charge section -->
+            <div class="form-group">
+                <label for="tot_day_charge">Total day charge</label>
+                <input type="number" step="0.01" name="tot_day_charge" id="tot_day_charge" class="formControl" placeholder="Enter total day charge" required>
+            </div>
+            <!-- end -->
+
+            <!-- total eve minutes section -->
+            <div class="form-group">
+                <label for="tot_eve_min">Total eve minutes</label>
+                <input type="number" step="0.01" name="tot_eve_min" id="tot_eve_min" class="formControl" placeholder="Enter total eve minutes" required>
+            </div>
+            <!-- end -->
+
+            <!-- total eve calls section -->
+            <div class="form-group">
+                <label for="tot_eve_calls">Total eve calls</label>
+                <input type="number" name="tot_eve_calls" id="tot_eve_calls" class="formControl" placeholder="Enter Total eve calls" required>
+            </div>
+            <!-- end -->
+
+            <!-- total eve charge section -->
+            <div class="form-group">
+                <label for="tot_eve_charge">Total eve charge</label>
+                <input type="number" step="0.01" name="tot_eve_charge" id="tot_eve_charge" class="formControl" placeholder="Enter total eve charge" required>
+            </div>
+            <!-- end -->
+
+            <!-- total night minutes section -->
+            <div class="form-group">
+                <label for="tot_night_min">Total night minutes</label>
+                <input type="number" step="0.01" name="tot_night_min" id="tot_night_min" class="formControl" placeholder="Enter total night minutes" required>
+            </div>
+            <!-- end -->
+
+            <!-- total night calls section -->
+            <div class="form-group">
+                <label for="tot_night_calls">Total night calls</label>
+                <input type="number" name="tot_night_calls" id="tot_night_calls" class="formControl" placeholder="Enter Total night calls" required>
+            </div>
+            <!-- end -->
+
+            <!-- total night charge section -->
+            <div class="form-group">
+                <label for="tot_night_charge">Total night charge</label>
+                <input type="number" step="0.01" name="tot_night_charge" id="tot_night_charge" class="formControl" placeholder="Enter total night charge" required>
+            </div>
+            <!-- end -->
+
+            <!-- total intl minutes section -->
+            <div class="form-group">
+                <label for="tot_intl_min">Total Internatinal minutes</label>
+                <input type="number" step="0.01" name="tot_intl_min" id="tot_intl_min" class="formControl" placeholder="Enter total Internatinal minutes" required>
+            </div>
+            <!-- end -->
+
+            <!-- total intl calls section -->
+            <div class="form-group">
+                <label for="tot_intl_calls">Total Internatinal calls</label>
+                <input type="number" name="tot_intl_calls" id="tot_intl_calls" class="formControl" placeholder="Enter Total Internatinal calls" required>
+            </div>
+            <!-- end -->
+
+            <!-- total intl charge section -->
+            <div class="form-group">
+                <label for="tot_intl_charge">Total Internatinal charge</label>
+                <input type="number" step="0.01" name="tot_intl_charge" id="tot_intl_charge" class="formControl" placeholder="Enter total Internatinal charge" required>
+            </div>
+            <!-- end -->
+
+            <!-- Customer Service Calls section -->
+            <div class="form-group">
+                <label for="cus_ser_calls">Number of Customer Service calls</label>
+                <input type="number" name="cus_ser_calls" id="cus_ser_calls" class="formControl" placeholder="Enter Number of Customer Service calls " required>
+            </div>
+            <!-- end -->
+
+            
+            <div class="form-group">
+                <button type="submit" id="submit" class="btn">Submit</button>
+            </div>
+        </form>
+        
+        <textarea  class="output"  rows="2" cols="50" disabled="true" autofocus>{{output}}</textarea>
+    </div>
+</body>
+</html> 
